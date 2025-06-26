@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños Rosangela ❤️</title>
+    
+    <!-- Meta tags para redes sociales -->
+    <meta property="og:title" content="Feliz Cumpleaños Rosangela ❤️">
+    <meta property="og:description" content="Un día especial para una persona muy especial">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Favicon personalizado -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❤️</text></svg>">
+    
+    <!-- Google Fonts románticos -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- AOS y Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader romántico -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-heart">
+            <div class="heart-beat">❤️ 🎂</div>
+            <p>Cargando dedicatorias especiales...</p>
+        </div>
+    </div>
+
+    <!-- Toggle modo noche/día -->
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon" id="themeIcon"></i>
+    </button>
+
+    <!-- Contador de días juntos -->
+    <div class="days-counter" id="daysCounter">
+        <div class="counter-content">
+            <span class="counter-number" id="daysNumber">20</span>
+            <span class="counter-text">Años Cumplidos 🎉</span>
+        </div>
+    </div>
+
+    <div class="floating-hearts" id="floating-hearts"></div>
+    
+    <button class="music-control" id="musicControl">
+        <i class="fas fa-play" id="musicIcon"></i>
+    </button>
+
+    <audio id="backgroundMusic" loop preload="auto">
+        <source src="ro.mp3" type="audio/mpeg">
+        Su navegador no soporta el elemento de audio.
+    </audio>
+
+    <div class="container">
+        <header class="header parallax-bg" data-aos="fade-down">
+            <h1>Feliz Cumpleaños Rosangela 🫶🎉</h1>
+            <p>Un día especial para una persona muy especial</p>
+        </header>
+
+        <section class="section parallax-section" data-aos="fade-right">
+            <h2><i class="fas fa-heart"></i> Lo que pienso de ti</h2>
+            <div class="image-gallery">
+                <div class="gallery-container">
+                    <div class="gallery-slide active">
+                        <div class="image-placeholder adaptive-placeholder">
+                            <img src="img/2.jpeg" alt="" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <div class="image-placeholder adaptive-placeholder">
+                            <img src="img/4.jpeg" alt="" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <div class="image-placeholder adaptive-placeholder">
+                            <img src="img/5.jpeg" alt="" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <div class="image-placeholder adaptive-placeholder">
+                            <img src="img/3.jpeg" alt="" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="gallery-navigation">
+                        <button class="gallery-btn prev-btn">‹</button>
+                        <button class="gallery-btn next-btn">›</button>
+                    </div>
+                </div>
+            </div>
+            <p>Señorita Rosangela, eres buena persona, con buenos sentimientos</p>
+            <p>No cambies por nada del mundo, ni por nadie. Tambien sé que eres capaz de cumplir lo que te propones</p>
+        </section>
+
+        <section class="section parallax-section" data-aos="fade-left">
+            <h2><i class="fas fa-star"></i> Mini palabritas</h2>
+            <div class="image-gallery">
+                <div class="gallery-container">
+                    <div class="gallery-slide active">
+                        <div class="adaptive-placeholder">
+                            <img src="img/1.jpeg" alt="" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>Chica destacada e inolvidable y sobre todo, buena punta para conversar :p</p>
+            <p>Es bueno contar con tu amistad y hasta los momentos más tranquilos donde simplemente disfrutamos de nuestra compañía</p>
+            <p>¡Por muchos brindis más, salud!</p>
+            <p>¡Que viva y que beba 👌🎉!</p>
+        </section>
+
+        <!-- Mini juego: Encuentra los iconos -->
+        <section class="section game-section" data-aos="zoom-in">
+            <h2><i class="fas fa-gamepad"></i> ¡Encuentra los iconos!</h2>
+            <p>¡Haz clic en los iconos buenos que aparecen para conseguir puntos! ❤️</p>
+            <div class="game-container" id="gameContainer">
+                <div class="game-score">Puntos: <span id="gameScore">0</span></div>
+                <div class="game-area" id="gameArea">
+                    <button class="start-game-btn" id="startGameBtn">¡Comenzar Juego!</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section parallax-section" data-aos="fade-right">
+            <h2><i class="fas fa-heart-eyes"></i> Lo que hace especial a Rosangela</h2>
+            <div class="adaptive-placeholder">
+                <img src="img/6.jpeg" alt="Rosangela" loading="lazy">
+            </div>
+            <ul class="love-reasons">
+                <li data-aos="fade-up" data-aos-delay="200">Es la mejor compañera para una buena salida con amigos</li>
+                <li data-aos="fade-up" data-aos-delay="300">Sabe disfrutar del momento</li>
+                <li data-aos="fade-up" data-aos-delay="500">Tiene un corazón enorme y siempre está ahí</li>
+            </ul>
+        </section>
+
+        <!-- Mensaje sorpresa con contraseña -->
+        <section class="section secret-section" data-aos="fade-up">
+            <h2><i class="fas fa-lock"></i> Mensaje Secreto</h2>
+            <p>Hay un mensaje especial esperándote... ¿Gustos de Rosangela? 🤔</p>
+            <div class="password-container">
+                <input type="text" id="secretPassword" placeholder="Escribe la respuesta aquí..." class="password-input">
+                <button id="unlockBtn" class="unlock-btn">Desbloquear ❤️</button>
+            </div>
+            <div id="secretMessage" class="secret-message hidden">
+                <h3>¡Mensaje Desbloqueado! 🎉</h3>
+                <p>Eres una mujer sencilla, de gustos impecables y con la energía y determinación para conquistar todo lo que te propongas. Sigue brillando y demostrando tu fuerza, mujer empoderada</p>
+                <p>Besos y abrazos: continúa creando recuerdos inolvidables y en cada instante que elijas atesorar con todo tu corazón</p>
+            </div>
+        </section>
+
+        <section class="section carta parallax-section" data-aos="fade-up">
+            <h2><i class="fas fa-envelope-heart"></i> Una Carta Para Ti</h2>
+            <div class="adaptive-placeholder">
+                <img src="img/7.jpeg" alt="Rosangela y yo" loading="lazy">
+            </div>
+                <p>Querida Rosangela,</p>
+                <p>Perdón por el regalo de cumpleaños tarde 😥 pero lo que puedo decirte es:</p>
+                <p>Hoy celebramos no solo tu cumpleaños, sino la maravillosa persona que eres, se agradece que hayas compartido un pedacito de tu vida conmigo, sigue con esas ganas de vivir la vida y por ser siempre tú: auténtica y divertida</p>
+                <p>Esperemos que este y todos los años que vienen te traigan más salidas con amigos, muchas risas y nuevas historias 🤙.</p>
+                <p>¡Feliz cumpleaños! 🎉🫶</p>
+                <p>Con mucho cariño,<br>CATO</p>
+        </section>
+
+        <section class="section final-section parallax-section" data-aos="zoom-in">
+            <h2><i class="fas fa-infinity"></i> Y esto solo es el comienzo...</h2>
+            <div class="birthday-cake">🎂</div>
+            <p>Este es solo el inicio de muchas aventuras más, de muchos cumpleaños por celebrar, de muchas sonrisas que compartir y de muchas cosas más que seguirás construyendo día a día, año tras año</p>
+            <p>¡Que viva Rosangela! ¡Que viva y que beba!</p>
+            <div class="final-celebration">
+                🎉 ¡FELIZ CUMPLEAÑOS! 🎉
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
